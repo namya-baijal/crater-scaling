@@ -37,4 +37,5 @@ python Plotting/error_script.py
 python Plotting/porosity_snapshots_moon45.py 46.65040839
 ```
 * Go to the directory `Plots_moon45` where the images are stored as png files and the last image should look like :
-! 
+
+
