@@ -16,6 +16,12 @@ cd iSALE-master/share/examples/dilatancy
 ```python
 model = psp.opendatfile('Dilatancy_moon45/jdata.dat', scale='km')
 ```
+* Then open the `dilatancy_obs.py` python script and make sure the same data file is being opened there and the last time step is the same in both the scripts
+```python
+model = psp.opendatfile('Dilatancy_moon45/jdata.dat', scale='km')  
+x_mod, y_mod = model.surfaceProfile(660, returnx=True) 
+```
+
 * Next step is to make sure the number of time steps is correct and check which solver is being used for the optimising function. The default solver is 'BFGS',however, for larger impactor sizes it is more appropriate to use 'Nelder-Mead' or 'Powell'.
 ```python
 o = optimize.minimize(optimizer_function, 200, method= 'Powell')
@@ -25,5 +31,10 @@ o = optimize.minimize(optimizer_function, 200, method= 'Powell')
 python Plotting/error_script.py
 ```
 ### Using the Diameter value to overlay the observational profile on the simulation
-*
-
+* Open the python script which plots the simulations. It is already pre-programmed to overlay the observational profile on the last time step.
+* Run the script using the following command where the number represents the D value derived from the optimiser.
+```
+python Plotting/porosity_snapshots_moon45.py 46.65040839
+```
+* Go to the directory `Plots_moon45` where the images are stored as png files and the last image should look like :
+! 
