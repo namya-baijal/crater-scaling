@@ -36,7 +36,15 @@ python Plotting/error_script.py
 ```
 python Plotting/porosity_snapshots_moon45.py 46.65040839
 ```
-* Go to the directory `Plots_moon45` where the images are stored as png files and the last image should look like :
+* Go to the directory `Plots_moon45` where the images are stored as png files and the last image should look like
 
 ![Simulation](Dilatancy_moon45-00500.png)
+* The aim is to create a match between the median profile (exhibited in pink) to the simulation. 
+* To overlay the observational median profile on the simulation independently go to `error_script.py` and uncomment the last few lines of the script. Input the diameter value of choice that the optimiser suggests and run the script as instructed before i.e 
+square error. The script also creates a plot of RMS error Vs Rim-Diameter for a range of values for a visual representation.
+```
+python Plotting/error_script.py
+```
+* A plot like this should be the output
 
+### To make changes to the crater-scaling equations 
