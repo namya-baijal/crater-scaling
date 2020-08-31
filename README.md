@@ -36,15 +36,32 @@ python Plotting/error_script.py
 ```
 python Plotting/porosity_snapshots_moon45.py 46.65040839
 ```
+* Both the crater metrics from the simulation as well as the observational lunar crater metrics are printed which can be compared. 
 * Go to the directory `Plots_moon45` where the images are stored as png files and the last image should look like
 
 ![Simulation](Dilatancy_moon45-00500.png)
 * The aim is to create a match between the median profile (exhibited in pink) to the simulation. 
 * To overlay the observational median profile on the simulation independently go to `error_script.py` and uncomment the last few lines of the script. Input the diameter value of choice that the optimiser suggests and run the script as instructed before i.e 
-square error. The script also creates a plot of RMS error Vs Rim-Diameter for a range of values for a visual representation.
 ```
 python Plotting/error_script.py
 ```
 * A plot like this should be the output
+![Profile](correct_comparison.png) 
 
 ### To make changes to the crater-scaling equations 
+* To modify the crater scaling equations for crater depth, peak height, floor radius, rim height etc go to `dilatancy_obs.py`
+* The power law equations can be modified depending on the results derived from quantile regression.
+* Remember the function below plots the 3 radial profiles- median, upper limit and lower limit and also prints the lunar crater parameter values.
+```python
+lunar_crater_characteristics(D, plt=None, norm=True, debug=True)
+```
+* After making any changes to the equations, to preview what the radial profiles look like before plotting on the actual simulations run the script: 
+```
+python Plotting/dilatancy_obs_imp.py <D> <True/False>
+```
+* Input any Diameter value in the above command line to check if the radial profiles look correct and also set `norm= True/False` depending on whether normalised or un-normalised radii values wish to be used.
+* As an example, the radial profile for an input D = 46 km looks like this: 
+
+
+
+
