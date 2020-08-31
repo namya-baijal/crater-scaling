@@ -60,7 +60,7 @@ lunar_crater_characteristics(D, plt=None, norm=True, debug=True)
 python Plotting/dilatancy_obs_imp.py <D> <True/False>
 ```
 * Input any Diameter value in the above command line to check if the radial profiles look correct and also set `norm= True/False` depending on whether normalised or un-normalised radii values wish to be used.
-* As an example, the radial profile for an input D = 46 km looks like this: 
+* As an example, the radial profile for an input D = 46 km looks like this
 
 
 
