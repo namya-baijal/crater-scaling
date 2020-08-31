@@ -1,4 +1,5 @@
 # Impact Crater-Scaling
+
 ## About
 'Crater Scaling' is a method used to relate the size and shape of each impact crater to the properties of the impactor and target surface. 
 
@@ -6,7 +7,8 @@ The primary objective of this project is to test and improve the crater scaling 
 
 The crater scaling equations from the observational data are then compared with the numerical simulations generated using iSALE. 
 
-## Steps to run the python files
+## Running Python Files
+
 ### Getting the Diameter value from the optimising algorithm
 * Make sure the python scripts are stored in the 'Plotting' directory. Then run them from:
 ```
@@ -61,6 +63,11 @@ python Plotting/dilatancy_obs_imp.py <D> <True/False>
 ```
 * Input any Diameter value in the above command line to check if the radial profiles look correct and also set `norm= True/False` depending on whether normalised or un-normalised radii values wish to be used.
 * As an example, the radial profile for an input D = 46 km looks like this
+
+![Radial profile](radial_profile.png) 
+
+## Contact
+* namya.baijal18@imperial.ac.uk
 
  
 
