@@ -4,8 +4,9 @@ authors:
 - family-names: "Baijal"
   given-names: "Namya"
   orcid: "https://orcid.org/0000-0000-0000-0000"
+preferred-citation:
+  type: manual
 title: "crater-scaling"
 version: 1.0.0
-doi: 10.5281/zenodo.1234
 date-released: 2020-07-01
 url: "https://github.com/namya-baijal/crater-scaling"
